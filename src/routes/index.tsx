@@ -18,8 +18,11 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { ContactForm } from "@/components/site/ContactForm";
 import heroImg from "@/assets/hero.jpg";
-import samanthaImg from "@/assets/samantha.jpg";
-import victoriaImg from "@/assets/victoria.jpg";
+import samanthaAsset from "@/assets/samantha.png.asset.json";
+import victoriaAsset from "@/assets/victoria-photo.jpg.asset.json";
+
+const samanthaImg = samanthaAsset.url;
+const victoriaImg = victoriaAsset.url;
 
 const title = "SHOPIFY EXPERT | Shopify Experts & E-commerce Consulting";
 const description =
