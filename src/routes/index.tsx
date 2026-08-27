@@ -18,8 +18,8 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { ContactForm } from "@/components/site/ContactForm";
 import heroImg from "@/assets/hero.jpg";
-import samanthaAsset from "@/assets/samantha.png.asset.json";
-import victoriaAsset from "@/assets/victoria-photo.jpg.asset.json";
+import samanthaAsset from "@/assets/samantha.jpg.asset.json";
+import victoriaAsset from "@/assets/victoria.png.asset.json";
 
 const samanthaImg = samanthaAsset.url;
 const victoriaImg = victoriaAsset.url;
@@ -210,14 +210,14 @@ function Index() {
                   key={m.name}
                   className="overflow-hidden rounded-3xl border border-border bg-card shadow-soft"
                 >
-                  <img
-                    src={m.img}
-                    alt={`Portrait of ${m.name}, Shopify Expert`}
-                    loading="lazy"
-                    width={768}
-                    height={960}
-                    className="h-80 w-full object-cover object-top"
-                  />
+                  <div className="aspect-[4/5] w-full bg-muted/30">
+                    <img
+                      src={m.img}
+                      alt={`Portrait of ${m.name}, Shopify Expert`}
+                      loading="lazy"
+                      className="h-full w-full object-contain object-center"
+                    />
+                  </div>
                   <div className="p-7">
                     <h3 className="text-xl font-bold text-foreground">{m.name}</h3>
                     <p className="mt-1 text-sm font-semibold text-primary">{m.role}</p>
