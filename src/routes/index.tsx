@@ -345,6 +345,18 @@ function Index() {
                 every inquiry personally and will respond with practical next steps.
               </p>
               <p className="mt-6 text-sm text-muted-foreground">
+                Prefer to chat on Discord?{" "}
+                <a
+                  href="https://discord.com/channels/@me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-primary underline-offset-2 hover:underline"
+                >
+                  Message Samantha Williams
+                </a>
+                .
+              </p>
+              <p className="mt-6 text-sm text-muted-foreground">
                 SHOPIFY EXPERT is an independent consulting team and is not affiliated with
                 Shopify Inc.
               </p>
