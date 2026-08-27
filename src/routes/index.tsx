@@ -109,6 +109,8 @@ const team = [
     img: samanthaImg,
     text: "Samantha Williams works with Shopify store owners to identify opportunities for store improvement, customer experience optimization, and e-commerce growth. She takes a practical, business-focused approach to helping online stores perform more effectively.",
     cta: "Work With Samantha",
+    ctaLink: "https://discord.com/channels/@me",
+    external: true,
   },
   {
     name: "Victoria Hayes",
@@ -116,6 +118,8 @@ const team = [
     img: victoriaImg,
     text: "Victoria Hayes helps Shopify businesses improve their online presence and develop practical e-commerce strategies tailored to their business goals. She focuses on creating better store experiences and helping business owners make informed growth decisions.",
     cta: "Work With Victoria",
+    ctaLink: "#contact",
+    external: false,
   },
 ];
 
@@ -223,7 +227,9 @@ function Index() {
                     <p className="mt-1 text-sm font-semibold text-primary">{m.role}</p>
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{m.text}</p>
                     <a
-                      href="#contact"
+                      href={m.ctaLink}
+                      target={m.external ? "_blank" : undefined}
+                      rel={m.external ? "noopener noreferrer" : undefined}
                       className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
                     >
                       {m.cta} <ArrowRight className="size-4" />
@@ -337,6 +343,18 @@ function Index() {
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 Share a few details about your Shopify store and goals. Samantha and Victoria review
                 every inquiry personally and will respond with practical next steps.
+              </p>
+              <p className="mt-6 text-sm text-muted-foreground">
+                Prefer to chat on Discord?{" "}
+                <a
+                  href="https://discord.com/channels/@me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-primary underline-offset-2 hover:underline"
+                >
+                  Message Samantha Williams
+                </a>
+                .
               </p>
               <p className="mt-6 text-sm text-muted-foreground">
                 SHOPIFY EXPERT is an independent consulting team and is not affiliated with
