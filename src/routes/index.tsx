@@ -227,9 +227,9 @@ function Index() {
                     <p className="mt-1 text-sm font-semibold text-primary">{m.role}</p>
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{m.text}</p>
                     <a
-                      href={m.name === "Samantha Williams" ? "https://discord.com/channels/@me" : "#contact"}
-                      target={m.name === "Samantha Williams" ? "_blank" : undefined}
-                      rel={m.name === "Samantha Williams" ? "noopener noreferrer" : undefined}
+                      href={m.ctaLink}
+                      target={m.external ? "_blank" : undefined}
+                      rel={m.external ? "noopener noreferrer" : undefined}
                       className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
                     >
                       {m.cta} <ArrowRight className="size-4" />
