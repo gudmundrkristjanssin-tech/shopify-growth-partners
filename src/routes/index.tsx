@@ -109,6 +109,8 @@ const team = [
     img: samanthaImg,
     text: "Samantha Williams works with Shopify store owners to identify opportunities for store improvement, customer experience optimization, and e-commerce growth. She takes a practical, business-focused approach to helping online stores perform more effectively.",
     cta: "Work With Samantha",
+    ctaLink: "https://discord.com/channels/@me",
+    external: true,
   },
   {
     name: "Victoria Hayes",
@@ -116,6 +118,8 @@ const team = [
     img: victoriaImg,
     text: "Victoria Hayes helps Shopify businesses improve their online presence and develop practical e-commerce strategies tailored to their business goals. She focuses on creating better store experiences and helping business owners make informed growth decisions.",
     cta: "Work With Victoria",
+    ctaLink: "#contact",
+    external: false,
   },
 ];
 
