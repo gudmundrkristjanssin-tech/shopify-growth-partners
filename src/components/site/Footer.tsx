@@ -1,0 +1,68 @@
+import { Link } from "@tanstack/react-router";
+
+const links = [
+  { label: "Home", href: "/#top" },
+  { label: "About", href: "/#about" },
+  { label: "Our Experts", href: "/#experts" },
+  { label: "Services", href: "/#services" },
+  { label: "How It Works", href: "/#process" },
+  { label: "Contact", href: "/#contact" },
+];
+
+export function Footer() {
+  return (
+    <footer className="bg-ink text-ink-foreground">
+      <div className="container-page grid gap-10 py-14 md:grid-cols-3">
+        <div>
+          <p className="font-display text-sm font-bold tracking-[0.2em]">
+            SHOPIFY<span className="text-primary"> EXPERT</span>
+          </p>
+          <p className="mt-3 max-w-xs text-sm text-ink-muted">
+            Professional Shopify &amp; E-commerce Consulting
+          </p>
+          <p className="mt-4 text-sm text-ink-muted">
+            Team: Samantha Williams <span className="text-ink-border">|</span> Victoria Hayes
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-ink-muted">
+            Navigation
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            {links.map((l) => (
+              <li key={l.label}>
+                <a href={l.href} className="text-sm text-ink-muted transition-colors hover:text-ink-foreground">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-ink-muted">Legal</p>
+          <ul className="mt-4 grid gap-2">
+            <li>
+              <Link to="/privacy" className="text-sm text-ink-muted transition-colors hover:text-ink-foreground">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms" className="text-sm text-ink-muted transition-colors hover:text-ink-foreground">
+                Terms of Service
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-ink-border">
+        <div className="container-page flex flex-col gap-2 py-6 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; {new Date().getFullYear()} SHOPIFY EXPERT. All rights reserved.</p>
+          <p>An independent consulting team. Not affiliated with Shopify Inc.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
