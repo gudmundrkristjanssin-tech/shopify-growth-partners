@@ -4,13 +4,13 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const links = [
-  { label: "Home", href: "/#top" },
-  { label: "About", href: "/#about" },
-  { label: "Our Experts", href: "/#experts" },
-  { label: "Services", href: "/#services" },
-  { label: "How It Works", href: "/#process" },
-  { label: "Contact", href: "/#contact" },
-];
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Our Experts", to: "/experts" },
+  { label: "Services", to: "/services" },
+  { label: "How It Works", to: "/how-it-works" },
+  { label: "Contact", to: "/contact" },
+] as const;
 
 export function Nav() {
   const [open, setOpen] = useState(false);
@@ -33,22 +33,24 @@ export function Nav() {
 
         <nav className="hidden items-center gap-7 lg:flex">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.href}
+              to={l.to}
+              activeOptions={{ exact: l.to === "/" }}
+              activeProps={{ className: "text-foreground" }}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <a
-          href="/#contact"
+        <Link
+          to="/contact"
           className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft transition-opacity hover:opacity-90 lg:inline-flex"
         >
           Book a Consultation
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -64,22 +66,24 @@ export function Nav() {
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="container-page flex flex-col py-3">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.label}
-                href={l.href}
+                to={l.to}
+                activeOptions={{ exact: l.to === "/" }}
+                activeProps={{ className: "text-foreground" }}
                 onClick={() => setOpen(false)}
                 className="py-2.5 text-sm font-medium text-muted-foreground"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="/#contact"
+            <Link
+              to="/contact"
               onClick={() => setOpen(false)}
               className="mt-3 mb-2 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground"
             >
               Book a Consultation
-            </a>
+            </Link>
           </nav>
         </div>
       )}
