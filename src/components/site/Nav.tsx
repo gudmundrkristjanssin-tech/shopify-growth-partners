@@ -18,8 +18,17 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">
-        <Link to="/" className="font-display text-sm font-bold tracking-[0.2em] text-foreground">
-          SHOPIFY<span className="text-primary"> EXPERT</span>
+        <Link to="/" className="flex items-center gap-2.5">
+          <img
+            src={logo}
+            alt="SHOPIFY EXPERT logo"
+            width={1024}
+            height={1024}
+            className="size-8 shrink-0 object-contain"
+          />
+          <span className="font-display text-sm font-bold tracking-[0.2em] text-foreground">
+            SHOPIFY<span className="text-primary"> EXPERT</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
