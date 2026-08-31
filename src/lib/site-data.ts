@@ -12,6 +12,7 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
+import boseAsset from "@/assets/bose.jpg.asset.json";
 import samanthaAsset from "@/assets/samantha.jpg.asset.json";
 import victoriaAsset from "@/assets/victoria.png.asset.json";
 
