@@ -15,9 +15,19 @@ export function Footer() {
     <footer className="bg-ink text-ink-foreground">
       <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="font-display text-sm font-bold tracking-[0.2em]">
-            SHOPIFY<span className="text-primary"> EXPERT</span>
-          </p>
+          <div className="flex items-center gap-2.5">
+            <img
+              src={logo}
+              alt="SHOPIFY EXPERT logo"
+              width={1024}
+              height={1024}
+              loading="lazy"
+              className="size-8 shrink-0 object-contain"
+            />
+            <p className="font-display text-sm font-bold tracking-[0.2em]">
+              SHOPIFY<span className="text-primary"> EXPERT</span>
+            </p>
+          </div>
           <p className="mt-3 max-w-xs text-sm text-ink-muted">
             Professional Shopify &amp; E-commerce Consulting
           </p>
