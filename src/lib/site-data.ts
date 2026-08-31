@@ -97,4 +97,13 @@ export const team = [
     ctaLink: "/contact",
     external: false,
   },
+  {
+    name: "Bose William",
+    role: "Shopify Expert",
+    img: boseAsset.url,
+    text: "Bose William supports Shopify store owners with clear, actionable guidance on store optimization, customer experience, and sustainable e-commerce growth. He brings a collaborative approach to helping businesses refine their online presence and make confident decisions.",
+    cta: "Work With Bose",
+    ctaLink: "/contact",
+    external: false,
+  },
 ];
