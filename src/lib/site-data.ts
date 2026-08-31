@@ -12,6 +12,7 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
+import boseAsset from "@/assets/bose.jpg.asset.json";
 import samanthaAsset from "@/assets/samantha.jpg.asset.json";
 import victoriaAsset from "@/assets/victoria.png.asset.json";
 
@@ -93,6 +94,15 @@ export const team = [
     img: victoriaAsset.url,
     text: "Victoria Hayes helps Shopify businesses improve their online presence and develop practical e-commerce strategies tailored to their business goals. She focuses on creating better store experiences and helping business owners make informed growth decisions.",
     cta: "Work With Victoria",
+    ctaLink: "/contact",
+    external: false,
+  },
+  {
+    name: "Bose William",
+    role: "Shopify Expert",
+    img: boseAsset.url,
+    text: "Bose William supports Shopify store owners with clear, actionable guidance on store optimization, customer experience, and sustainable e-commerce growth. He brings a collaborative approach to helping businesses refine their online presence and make confident decisions.",
+    cta: "Work With Bose",
     ctaLink: "/contact",
     external: false,
   },
