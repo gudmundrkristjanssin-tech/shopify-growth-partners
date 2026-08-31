@@ -2,13 +2,13 @@ import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
 
 const links = [
-  { label: "Home", href: "/#top" },
-  { label: "About", href: "/#about" },
-  { label: "Our Experts", href: "/#experts" },
-  { label: "Services", href: "/#services" },
-  { label: "How It Works", href: "/#process" },
-  { label: "Contact", href: "/#contact" },
-];
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Our Experts", to: "/experts" },
+  { label: "Services", to: "/services" },
+  { label: "How It Works", to: "/how-it-works" },
+  { label: "Contact", to: "/contact" },
+] as const;
 
 export function Footer() {
   return (
