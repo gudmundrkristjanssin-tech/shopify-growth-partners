@@ -15,7 +15,7 @@ import {
 import boseImg from "@/assets/bose.jpg";
 import samanthaImg from "@/assets/samantha.jpg";
 import victoriaImg from "@/assets/victoria.png";
-import ameliaImg from "@/assets/amelia.png.asset.json";
+import ameliaImg from "@/assets/amelia.png";
 
 export const DISCORD_URL = "https://discord.com/channels/@me";
 
@@ -110,7 +110,7 @@ export const team = [
   {
     name: "Amelia Rose",
     role: "Shopify Expert",
-    img: ameliaImg.url,
+    img: ameliaImg,
     text: "Amelia Rose helps Shopify store owners strengthen their online presence and customer experience with practical, business-focused guidance. She works closely with businesses to identify opportunities, refine store operations, and make confident growth decisions.",
     cta: "Work With Amelia",
     ctaLink: "/contact",
