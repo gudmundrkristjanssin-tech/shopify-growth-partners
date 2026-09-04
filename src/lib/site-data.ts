@@ -15,6 +15,7 @@ import {
 import boseImg from "@/assets/bose.jpg";
 import samanthaImg from "@/assets/samantha.jpg";
 import victoriaImg from "@/assets/victoria.png";
+import ameliaImg from "@/assets/amelia.png.asset.json";
 
 export const DISCORD_URL = "https://discord.com/channels/@me";
 
@@ -103,6 +104,15 @@ export const team = [
     img: boseImg,
     text: "Bose William supports Shopify store owners with clear, actionable guidance on store optimization, customer experience, and sustainable e-commerce growth. He brings a collaborative approach to helping businesses refine their online presence and make confident decisions.",
     cta: "Work With Bose",
+    ctaLink: "/contact",
+    external: false,
+  },
+  {
+    name: "Amelia Rose",
+    role: "Shopify Expert",
+    img: ameliaImg.url,
+    text: "Amelia Rose helps Shopify store owners strengthen their online presence and customer experience with practical, business-focused guidance. She works closely with businesses to identify opportunities, refine store operations, and make confident growth decisions.",
+    cta: "Work With Amelia",
     ctaLink: "/contact",
     external: false,
   },
