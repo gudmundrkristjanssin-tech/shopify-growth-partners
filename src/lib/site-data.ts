@@ -82,7 +82,7 @@ export const team = [
   {
     name: "Samantha Williams",
     role: "Shopify Expert",
-    img: samanthaAsset.url,
+    img: samanthaImg,
     text: "Samantha Williams works with Shopify store owners to identify opportunities for store improvement, customer experience optimization, and e-commerce growth. She takes a practical, business-focused approach to helping online stores perform more effectively.",
     cta: "Work With Samantha",
     ctaLink: DISCORD_URL,
@@ -91,7 +91,7 @@ export const team = [
   {
     name: "Victoria Hayes",
     role: "Shopify Expert",
-    img: victoriaAsset.url,
+    img: victoriaImg,
     text: "Victoria Hayes helps Shopify businesses improve their online presence and develop practical e-commerce strategies tailored to their business goals. She focuses on creating better store experiences and helping business owners make informed growth decisions.",
     cta: "Work With Victoria",
     ctaLink: "/contact",
@@ -100,7 +100,7 @@ export const team = [
   {
     name: "Bose William",
     role: "Shopify Expert",
-    img: boseAsset.url,
+    img: boseImg,
     text: "Bose William supports Shopify store owners with clear, actionable guidance on store optimization, customer experience, and sustainable e-commerce growth. He brings a collaborative approach to helping businesses refine their online presence and make confident decisions.",
     cta: "Work With Bose",
     ctaLink: "/contact",
