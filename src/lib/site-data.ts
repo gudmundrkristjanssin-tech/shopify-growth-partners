@@ -12,9 +12,9 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
-import boseAsset from "@/assets/bose.jpg.asset.json";
-import samanthaAsset from "@/assets/samantha.jpg.asset.json";
-import victoriaAsset from "@/assets/victoria.png.asset.json";
+import boseImg from "@/assets/bose.jpg";
+import samanthaImg from "@/assets/samantha.jpg";
+import victoriaImg from "@/assets/victoria.png";
 
 export const DISCORD_URL = "https://discord.com/channels/@me";
 
