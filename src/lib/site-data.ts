@@ -107,4 +107,13 @@ export const team = [
     ctaLink: "/contact",
     external: false,
   },
+  {
+    name: "Amelia Rose",
+    role: "Shopify Expert",
+    img: ameliaImg,
+    text: "Amelia Rose helps Shopify store owners strengthen their online presence and customer experience with practical, business-focused guidance. She works closely with businesses to identify opportunities, refine store operations, and make confident growth decisions.",
+    cta: "Work With Amelia",
+    ctaLink: "/contact",
+    external: false,
+  },
 ];
