@@ -15,6 +15,7 @@ import {
 import boseImg from "@/assets/bose.jpg";
 import samanthaImg from "@/assets/samantha.jpg";
 import victoriaImg from "@/assets/victoria.png";
+import ameliaImg from "@/assets/amelia.png.asset.json";
 
 export const DISCORD_URL = "https://discord.com/channels/@me";
 
